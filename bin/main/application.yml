@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: demo-application
+  config:
+    import: "aws-parameterstore:/config/app"
+  cloud:
+    aws:
+      credentials:
+        profile:
+          name: default
+      region:
+        static: us-west-2
+
+custom:
+  bucket-name: sqsbucketstack-bucket83908e77-w5xieszusc63
